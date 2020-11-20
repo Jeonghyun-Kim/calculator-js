@@ -13,7 +13,7 @@ const operatorArray = ['+', '-', '*', '/'];
 export default function Home() {
   const [baseNum, setBaseNum] = React.useState(0);
   const [current, setCurrent] = React.useState(null);
-  const [operator, setOperator] = React.useState('+');
+  const [operator, setOperator] = React.useState(null);
 
   const handleClear = React.useCallback(() => {
     setBaseNum(0);
