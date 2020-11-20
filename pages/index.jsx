@@ -15,13 +15,13 @@ export default function Home() {
   const [current, setCurrent] = React.useState(null);
   const [operator, setOperator] = React.useState(null);
 
-  const handleClear = React.useCallback(() => {
+  const handleClear = () => {
     setBaseNum(0);
     setCurrent(null);
     setOperator(null);
-  }, [setBaseNum, setCurrent, setOperator]);
+  };
 
-  const handleCalculate = React.useCallback(() => {
+  const handleCalculate = () => {
     switch (operator) {
       case '+': {
         setBaseNum(baseNum + current);
@@ -45,7 +45,7 @@ export default function Home() {
     }
     setCurrent(null);
     setOperator(null);
-  }, [current, operator, handleClear]);
+  };
 
   return (
     <Root>
