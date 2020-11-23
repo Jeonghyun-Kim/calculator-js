@@ -6,6 +6,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { Person, Search, Mic } from '@material-ui/icons';
 
 const Root = styled.div`
+  font-family: sans-serif;
   height: 100%;
   display: flex;
   flex-direction: column;
